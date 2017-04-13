@@ -1,0 +1,13 @@
+machine:
+    php:
+        version: 5.6.22
+    hosts:
+        localhost: 127.0.0.1
+        cci.v2.com: 127.0.0.1
+
+
+deployment:
+  staging:
+    branch: master
+    commands:
+      - dep deploy:staging
