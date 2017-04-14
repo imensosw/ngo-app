@@ -2,9 +2,7 @@
 
 namespace Deployer;
 
-//require 'recipe/laravel.php';
 
-// Configuration
 
 set('repository', 'https://github.com/japrihar69/ngo-app.git');
 

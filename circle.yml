@@ -1,10 +1,3 @@
-machine:
-    php:
-        version: 5.6.22
-    hosts:
-        localhost: 127.0.0.1
-        job.v2.com: 127.0.0.1
-
  
 dependencies:
   pre:
@@ -13,12 +6,7 @@ dependencies:
     - curl -LO https://deployer.org/deployer.phar
     - sudo mv deployer.phar /usr/local/bin/dep
     - chmod +x /usr/local/bin/dep
-    - sudo chmod 777 storage/ -R
-
-  override:
-    - composer install --no-interaction
-    
-    
+   
 deployment:
   staging:
     branch: master
