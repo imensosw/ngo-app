@@ -2,11 +2,11 @@
 
 namespace Deployer;
 
-require 'recipe/laravel.php';
+//require 'recipe/laravel.php';
 
 // Configuration
 
-set('repository', 'git@bitbucket.org:sapna_laccheta/job_tinder.git');
+set('repository', 'https://github.com/japrihar69/ngo-app.git');
 
 add('shared_files', [
     'logs',
@@ -18,10 +18,10 @@ add('writable_dirs', []);
 
 // Servers
 
-server('staging', 'server.com')
-        ->user('serverUserName')
-        ->password('password')
-        ->set('deploy_path', '/home/job_tinder/public_html/job_tinder');
+server('staging', 'dev.promarkup.co')
+        ->user('pixelspeaks')
+        ->password('Random@123')
+        ->set('deploy_path', '/home/pixelspeaks/public_html/dev/job_tinder/ngo-app');
 
 
 // Tasks
